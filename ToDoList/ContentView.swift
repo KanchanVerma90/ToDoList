@@ -42,19 +42,21 @@ struct ContentView: View {
     }
 
     private func addItem() {
-        withAnimation {
-            let newItem = TaskDetail(context: viewContext)
-            newItem.createTime = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+        
+//        NavigationLink(cˀx`t57ti8fr4`1rf, destination: ``)
+//        withAnimation {
+//            let newItem = TaskDetail(context: viewContext)
+//            newItem.createTime = Date()
+//
+//            do {
+//                try viewContext.save()
+//            } catch {
+//                // Replace this implementation with code to handle the error appropriately.
+//                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+//                let nsError = error as NSError
+//                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+//            }
+//        }
     }
 
     private func deleteItems(offsets: IndexSet) {
